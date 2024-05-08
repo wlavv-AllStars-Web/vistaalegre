@@ -108,7 +108,12 @@
           <a href="/"><img src="/img/vistaalegre.png" /></a>
         </div>
         <div class="js-top-menu desktop" id="_desktop_top_menu">
-          
+          <ul class="desktop_menu">
+            <li><a href="/">opcao 1</a></li>
+            <li><a href="/">opcao 2</a></li>
+            <li><a href="/">opcao 3</a></li>
+            <li><a href="/">opcao 4</a></li>
+          </ul>
         </div>
         <div class="js-top-menu-bottom">
           <div id="_desktop_currency_selector"></div>
