@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_accounts</name>
+    <displayName><![CDATA[Conta PrestaShop]]></displayName>
+    <version><![CDATA[6.3.2]]></version>
+    <description><![CDATA[Associe a sua loja &agrave; sua conta PrestaShop para ativar e gerenciar as suas assinaturas no seu back-office. N&atilde;o desinstale este m&oacute;dulo se tiver uma assinatura ativa.]]></description>
+    <author><![CDATA[PrestaShop]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[Esta ação impedirá imediatamente que os seus serviços PrestaShop e os serviços da Comunidade funcionem visto que eles usam o módulo PrestaShop Accounts para autenticação.]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

@@ -1,0 +1,778 @@
+:root{
+    --bg: #000;
+}
+html,
+body {
+      position: relative;
+      height: 100%;
+      overflow-y: hidden;
+    }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*  */
+  .swiper-slide {
+    height: 100vh !important;
+  }
+  .swiper-slide:nth-child(1) {
+    background-image: url("https://images.pexels.com/photos/19894377/pexels-photo-19894377/free-photo-of-flores-mesa-talheres-faqueiro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .swiper-slide:nth-child(2) {
+    background: #f6f6f6;
+  }
+
+
+  .swiper-wrapper{
+    height: 100vh !important;
+  }
+
+#header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    background: transparent !important;
+}
+
+#header .header-top{
+    background-color: transparent;
+    padding: 0;
+}
+
+#wrapper{
+    padding: 0;
+}
+
+#wrapper .container {
+    width: 100%;
+}
+
+#content-wrapper{
+    padding: 0;
+}
+
+#desktop_top_menu_wrapper{
+    background: #f6f6f6;
+  width: 0;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  transition: width .25s ease-in-out;
+  visibility: hidden;
+}
+
+#_desktop_logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.searchbar_desktop #search_widget {
+    float: unset;
+    margin: auto;
+}
+.searchbar_desktop #search_widget form{
+    border-bottom: 1px solid #fff;
+}
+.searchbar_desktop #search_widget form input[type="text"]{
+    background: transparent;
+    color: #fff;
+}
+
+.searchbar_desktop #search_widget form input::placeholder, .searchbar_desktop #search_widget form textarea::placeholder{
+    color: #fff;
+}
+
+.header-top-right {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    color: #fff;
+}
+
+.header-top-right #_desktop_cart{
+  display: flex;
+  align-items: center;
+}
+
+
+
+#_desktop_user_info .user-info a{
+    color: #fff;
+}
+
+#menu-icon-desktop {
+  color: #fff;
+}
+
+.help-menu {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.help-menu a{
+  color: #fff;
+}
+.help-menu i{
+  font-size: 18px;
+}
+
+.fa-bag-shopping {
+  font-size: 18px;
+}
+
+
+.homepage-slider{
+  height: 100dvh;
+  background: rgba(0,0,0,.4);
+}
+.footer-homepage{
+  height: 100dvh;
+}
+
+.placeholder-black::placeholder{
+  color: #333 !important;
+}
+
+.newsletter-container input.btn {
+  display: none;
+}
+
+.block-social p{
+  text-align: left;
+}
+
+.block-social ul li a {
+  display: flex;
+  height: 100%;
+  overflow: unset;
+  text-indent: 0;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-social ul li:hover {
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+
+.block-social ul li a i{
+  font-size: 30px;
+  color: #333;
+}
+
+.block-social ul li a i.fa-facebook-f{
+  font-size: 25px;
+}
+/* header */
+
+.header-top .header-top-right a{
+  color: #fff;
+}
+.header-top .header-top-right a:hover{
+  color: #fff;
+}
+
+.header-top .header-top-right-mobile a{
+  color: #fff;
+}
+.header-top .header-top-right-mobile a:hover{
+  color: #fff;
+}
+
+/* inicio sessão */
+
+.inicio-sessao {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+}
+
+.inicio-sessao .container-inicio {
+  display: flex;
+  gap: 1rem;
+}
+
+
+#authentication{
+  background-image: url("https://images.pexels.com/photos/19894377/pexels-photo-19894377/free-photo-of-flores-mesa-talheres-faqueiro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#authentication #wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,.4);
+}
+
+#authentication #wrapper .breadcrumb {
+  display: none;
+}
+#authentication #wrapper .page-header {
+  display: none;
+}
+
+#desktop_top_menu_wrapper .logo-menu{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#desktop_top_menu_wrapper .logo-menu img{
+  width: 100%;
+  max-width: 125px;
+}
+
+
+/* register page */
+
+#registration{
+  background-image: url("https://images.pexels.com/photos/19894377/pexels-photo-19894377/free-photo-of-flores-mesa-talheres-faqueiro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#registration #wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,.4);
+}
+#registration #wrapper .breadcrumb {
+  display: none;
+}
+#registration #wrapper .page-header {
+  display: none;
+}
+#registration #wrapper .page-content {
+  margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+#cart .header-top .header-top-right{
+  color: #333;
+}
+#cart .header-top .header-top-right a{
+  color: #333;
+}
+#cart .header-top #menu-icon-desktop{
+  color: #333;
+}
+
+#cart #wrapper {
+  padding: 1rem;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart .cart-no-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#cart .cart-no-products i{
+  font-size: 10rem;
+}
+
+#cart .searchbar_desktop #search_widget form {
+  border-bottom: 1px solid #333;
+}
+
+#cart  .searchbar_desktop #search_widget i {
+  color: #333;
+}
+
+#cart .searchbar_desktop #search_widget form input::placeholder, .searchbar_desktop #search_widget form textarea::placeholder {
+  color: #333;
+}
+
+#cart .searchbar_desktop #search_widget form input[type="text"] {
+  color: #333;
+}
+
+.cart-grid-body .label {
+  color: #333 !important;
+  text-decoration: underline;
+}
+
+
+@media screen and (min-width:769px) {
+  .searchbar_desktop #search_widget i.clear {
+    display: none;
+  }
+  .searchbar_desktop #search_widget i {
+    color: #fff;
+  }
+
+  .homepage-slider {
+    display: flex;
+  justify-content: center;
+  align-items: end;
+  }
+
+  .brands-homepage{
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+    padding: 3rem;
+    background: rgba(0,0,0,.8);
+  }
+
+  .brands-homepage .brands-logo {
+    padding: 10px;
+    background: rgba(0,0,0,.9);
+    border-radius: .25rem;
+  }
+
+  .brands-homepage .brands-logo:hover {
+    background: #666;
+    cursor: pointer;
+  }
+
+
+
+  .brands-homepage .brands-logo img {
+    max-width: 125px;
+    object-fit: contain;
+  }
+
+  .footer-homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .footer-homepage .links .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-homepage .links .row .wrapper{
+    font-size: 1rem;
+  }
+  .footer-homepage .links .row .wrapper .h3{
+    font-size: 1rem;
+    text-decoration: underline #232323;
+  }
+  .footer-homepage .links .row .wrapper a{
+    color: #666 !important;
+  }
+  .footer-homepage .links .row .wrapper a:hover{
+    text-decoration: underline #333 !important;
+    color: #333 !important;
+  }
+
+  .footer-homepage #blockEmailSubscription_displayFooter{
+    margin: 0;
+    background: transparent;
+    margin-bottom: 1rem;
+  }
+  .footer-homepage #blockEmailSubscription_displayFooter #block-newsletter-label{
+    width: 100%;
+  }
+
+  .footer-homepage #blockEmailSubscription_displayFooter .input-wrapper input {
+    border: 0;
+    border-bottom: 2px solid #333;
+    background: #f6f6f6;
+    height: 20px;
+  }
+  .footer-homepage #blockEmailSubscription_displayFooter .input-wrapper input::placeholder {
+    color: #333;
+  }
+
+  .footer-homepage #blockEmailSubscription_displayFooter .row div:nth-child(1){
+    padding: 0 !important;
+    margin: 0;
+    width: 100%;
+  }
+  .footer-homepage #blockEmailSubscription_displayFooter .row .newsletter-container{
+    padding: 0 !important;
+    margin: 0;
+    width: 100%;
+  }
+
+  .footer-homepage #blockEmailSubscription_displayFooter form .col-xs-12:nth-child(1){
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .footer-homepage #blockEmailSubscription_displayFooter form .col-xs-12:nth-child(1) .btn{
+    margin: 0;
+    height: 26px;
+    color: #333;
+    background-color: #f6f6f6;
+    border-color: #333;
+  }
+  .footer-homepage #blockEmailSubscription_displayFooter form .col-xs-12:nth-child(1) .btn:hover{
+    margin: 0;
+    height: 26px;
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .search-mobile {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    height: 100dvh;
+    background: #f6f6f6;
+  }
+
+  .search-mobile #search_widget {
+    padding: 1rem;
+  }
+
+  .header-top-right-mobile{
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    color: #fff;
+    align-items: center;
+    z-index: 1;
+  }
+
+  #_desktop_logo .logo {
+    position: relative;
+    z-index: 1;
+  }
+
+  #mobile_top_menu_wrapper{
+    background: #fff;
+    width: 0;
+    position: absolute;
+    height: 100dvh;
+    top: 0;
+    transition: width .25s ease-in-out;
+    visibility: hidden;
+  }
+
+  #mobile_top_menu_wrapper .clear{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .homepage-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brands-homepage{
+    display: grid;
+    grid-template-areas: 
+    'logo1 logo2'
+    'logo3 logo4'
+    ;
+    gap: 1.5rem;
+  }
+
+  .brands-homepage .brands-logo:nth-child(1){
+    grid-area: logo1;
+    aspect-ratio: 1;
+  }
+  .brands-homepage .brands-logo:nth-child(2){
+    grid-area: logo2;
+    aspect-ratio: 1;
+  }
+  .brands-homepage .brands-logo:nth-child(3){
+    grid-area: logo3;
+    aspect-ratio: 1;
+  }
+  .brands-homepage .brands-logo:nth-child(4){
+    grid-area: logo4;
+    aspect-ratio: 1;
+  }
+
+  .brands-homepage .brands-logo {
+    padding: 10px;
+    background: rgba(0,0,0,.9);
+    border-radius: .25rem;
+  }
+
+  .brands-homepage .brands-logo:hover {
+    background: #666;
+    cursor: pointer;
+  }
+
+
+
+  .brands-homepage .brands-logo img {
+    max-width: 125px;
+    object-fit: contain;
+  }
+
+
+  .footer-homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-homepage #blockEmailSubscription_displayFooter{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+  .footer-homepage .links .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #blockEmailSubscription_displayFooter .row {
+    padding: 0 !important;
+    margin: 0;
+  }
+  #blockEmailSubscription_displayFooter p {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .newsletter-container {
+    padding: 0;
+  }
+  .newsletter-container .row .col-xs-12:nth-child(1) {
+    padding: 0;
+  }
+
+  .block_newsletter #block-newsletter-label {
+    font-size: 1rem;
+  }
+
+  .block_newsletter form .input-wrapper {
+    padding: 1rem;
+  }
+
+  .block_newsletter form input[type="email"] {
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+    border-radius: 0;
+    background: transparent;
+    text-align: center;
+  }
+  .block_newsletter form input[type="email"]:focus {
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .block-social p {
+    text-align: center;
+  }
+
+  .links .collapse-icons{
+    display: none;
+  }
+
+  #wrapper #notifications {
+    display: none;
+  }
+
+  #authentication #content-wrapper {
+    padding: 1rem;
+  }
+  #authentication #content-wrapper #content{
+    border-radius: .25rem;
+  }
+  
+  #registration #content-wrapper #content{
+    border-radius: .25rem;
+  }
+
+
+  #content-wrapper input:-webkit-autofill {
+    color: #bfbfbf;
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 220px #fff !important;
+    -webkit-text-fill-color: #fff;
+  }
+  #content-wrapper input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #333;
+  }
+
+  .form-control {
+    border: 0;
+    border-bottom: 1px solid #333;
+    text-align: center;
+  }
+  .form-control:focus {
+    outline: 0;
+    border-color: #333;
+  }
+
+  .input-group.focus{
+    outline: 0;
+  }
+
+  .login-form a{
+    color: #333;
+  }
+
+  .no-account a {
+    color: #333;
+  }
+  .login-form a:hover{
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .no-account a:hover{
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .login-form #submit-login {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .form-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* registration */
+  #registration{
+    overflow-y: scroll;
+  }
+  #registration #wrapper{
+    min-height: 100vh;
+    height: 100%;
+  }
+  #registration #header{
+    background: rgba(0,0,0,.8) !important;
+  }
+
+  #registration #wrapper .page-content {
+    width: 95%; 
+    line-height: 1em;
+    margin-top: 2rem;
+  }
+
+  #customer-form .form-control-label {
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: .75rem;
+  }
+  #customer-form .form-control {
+    padding: 0;
+    background: #fff;
+  }
+  #customer-form .form-group {
+    margin: 0;
+  }
+
+  #customer-form .form-control-submit {
+    color: #fff;
+    background-color: #333;
+    border-color: transparent;
+  }
+
+  .register-form a{
+    color: #333;
+    text-decoration: underline;
+  }
+  .register-form a:hover{
+    color: #333;
+    text-decoration: underline;
+  }
+}
+
+
+
+#content-wrapper input:-webkit-autofill {
+  color: #bfbfbf;
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 220px #fff !important;
+  -webkit-text-fill-color: #333;
+}
+#content-wrapper input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #333;
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+.form-control:focus {
+  outline: 0;
+  border-color: #333;
+}
+
+.input-group.focus{
+  outline: 0;
+}
+
+.login-form a{
+  color: #333;
+}
+
+.no-account a {
+  color: #333;
+}
+.login-form a:hover{
+  color: #333;
+  text-decoration: underline;
+}
+
+.no-account a:hover{
+  color: #333;
+  text-decoration: underline;
+}
+
+.login-form #submit-login {
+  background-color: #333;
+  color: #fff;
+}
