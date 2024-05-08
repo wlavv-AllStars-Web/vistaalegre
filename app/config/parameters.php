@@ -3,9 +3,9 @@
   array (
     'database_host' => '127.0.0.1',
     'database_port' => '',
-    'database_name' => 'vistaalegre',
-    'database_user' => 'root',
-    'database_password' => '',
+    'database_name' => 'asw08052024_vistaalegre',
+    'database_user' => 'asw08052024_gs6tjsu7tgs',
+    'database_password' => ';5cO%QoiOi,G',
     'database_prefix' => 'ps_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',
