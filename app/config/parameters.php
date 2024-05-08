@@ -3,7 +3,7 @@
   array (
     'database_host' => '127.0.0.1',
     'database_port' => '',
-    'database_name' => 'asw08052024_vistaalegre',
+    'database_name' => 'asw08052024_vistaalegre_beta',
     'database_user' => 'asw08052024_gs6tjsu7tgs',
     'database_password' => ';5cO%QoiOi,G',
     'database_prefix' => 'ps_',
