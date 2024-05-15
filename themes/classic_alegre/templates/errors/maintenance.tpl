@@ -33,6 +33,8 @@
         {block name='page_header_logo'}
         <div class="logo"><img src="/img/vistaalegre.webp" alt="logo" loading="lazy"></div>
         <div class="email"><i class="fa-solid fa-envelope"></i>info@vistaalegre-valenca.com</div>
+        <div class="email_mobile"><a href="mailto:info@vistaalegre-valenca.com"><i class="fa-solid fa-envelope"></i>Contacte-nos</a></div>
+
         {/block}
 
         {block name='hook_maintenance'}
