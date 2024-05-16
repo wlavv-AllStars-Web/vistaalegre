@@ -44,7 +44,15 @@
           </div>
         </div>
         <div class="contacts_maintenance_mobile">
-          <a href="mailto:info@vistaalegre-valenca.com"><i class="fa-solid fa-envelope"></i>Contacte-nos</a>
+          <a class="email_mobile" href="mailto:info@vistaalegre-valenca.com"><i class="fa-solid fa-envelope"></i></a>
+          <div class="contact_whatsapp_container">
+            <img class="button_whatsapp" src="/img/whatsapp_search.png" width="40" />
+            <div class="whatsapp_content whatsapp_hidden">
+              <a href="https://wa.me/+351962551603" class="contact_whatsapp"><img src="/img/flags/pt.svg" width="32" />+351 962 551 603</a>
+              <a href="https://wa.me/+351964516148" class="contact_whatsapp"><img src="/img/flags/pt.svg" width="32" />+351 964 516 148</a>
+              <a href="https://wa.me/+34673208992" class="contact_whatsapp"><img src="/img/flags/es.svg" width="32" />+34 673 208 992</a>
+            </div>
+          </div>
         </div>
  
         {/block}

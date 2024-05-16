@@ -43,11 +43,12 @@
 body{
     margin: 0 !important;
     padding: 0;
+    overflow-y: scroll !important;
   }
   #layout-error{
     width: 100% !important;
     padding: 0 !important;
-    height: 100dvh !important;
+    min-height: 100dvh;
     margin: 0 !important;
     background-image: url("https://images.pexels.com/photos/19894377/pexels-photo-19894377/free-photo-of-flores-mesa-talheres-faqueiro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
@@ -61,6 +62,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 100dvh;
   }
 
   #layout-error #main::before{
@@ -125,9 +127,6 @@ body{
     position: relative;
     z-index: 2;
   }
-  .button_whatsapp:hover .whatsapp_hidden{
-
-  }
   .whatsapp_content{
     position: absolute;
     top: 1rem;
@@ -141,9 +140,6 @@ body{
   }
   .whatsapp_hidden{
     display: none;
-  }
-  .contact_whatsapp{
-    
   }
 
   #layout-error #main .page-header .contacts_maintenance_mobile {
@@ -187,6 +183,33 @@ body{
   }
 
   @media screen and (max-width:560px) {
+
+    .contact_whatsapp_container{
+
+    }
+
+    .whatsapp_content{
+      padding: 1rem;
+      width: max-content;
+      position: absolute;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      top: 2.25rem;
+    }
+
+    .whatsapp_content.whatsapp_hidden{
+      max-height: 0;
+      transition: max-height 0.15s ease-out;
+    }
+    
+    .whatsapp_content a.contact_whatsapp {
+      color: #282828 !important;
+      text-decoration:  underline;
+      padding: 0.5rem 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      gap: .5rem;
+    }
+
     .page-content h1{
       color: white !important;
       font-size: 3rem !important;
@@ -219,16 +242,19 @@ body{
       color: #fff;
     font-weight: lighter;
     font-size: 1.25rem;
-    display: block;
+    display: flex;
+    gap: 1.5rem;
+    padding-inline: 1rem;
     }
 
-    #layout-error #main .page-header .contacts_maintenance_mobile a {
+    #layout-error #main .page-header .contacts_maintenance_mobile .email_mobile {
       display: flex;
       align-items: center;
       gap: .5rem;
-      color: #fff !important;
-      text-decoration: none;
       text-wrap: nowrap;
+      color: #fff !important;
+      font-size: 2.25rem;
+      text-decoration: none;
     }
   }
 
