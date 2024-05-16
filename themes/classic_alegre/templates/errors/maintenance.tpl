@@ -32,9 +32,21 @@
       <header class="page-header">
         {block name='page_header_logo'}
         <div class="logo"><img src="/img/vistaalegre.webp" alt="logo" loading="lazy"></div>
-        <div class="email"><i class="fa-solid fa-envelope"></i>info@vistaalegre-valenca.com</div>
-        <div class="email_mobile"><a href="mailto:info@vistaalegre-valenca.com"><i class="fa-solid fa-envelope"></i>Contacte-nos</a></div>
-
+        <div class="contacts_maintenance">
+          <a href="mailto:info@vistaalegre-valenca.com"><i class="fa-solid fa-envelope"></i>info@vistaalegre-valenca.com</a>
+          <div class="contact_whatsapp_container">
+            <img class="button_whatsapp" src="/img/whatsapp_search.png" width="40" />
+            <div class="whatsapp_content whatsapp_hidden">
+              <a href="https://wa.me/+351962551603" class="contact_whatsapp"><img src="/img/flags/pt.svg" width="32" />+351 962 551 603</a>
+              <a href="https://wa.me/+351964516148" class="contact_whatsapp"><img src="/img/flags/pt.svg" width="32" />+351 964 516 148</a>
+              <a href="https://wa.me/+34673208992" class="contact_whatsapp"><img src="/img/flags/es.svg" width="32" />+34 673 208 992</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts_maintenance_mobile">
+          <a href="mailto:info@vistaalegre-valenca.com"><i class="fa-solid fa-envelope"></i>Contacte-nos</a>
+        </div>
+ 
         {/block}
 
         {block name='hook_maintenance'}
@@ -69,7 +81,7 @@
 
   </section>
 
-
+<script src="/themes/classic_alegre/assets/js/error.js"></script>
 {/block}
 
 <style>

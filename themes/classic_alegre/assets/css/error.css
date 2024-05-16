@@ -81,17 +81,75 @@ body{
     justify-content: space-between;
     align-items: center;
   }
+  #layout-error #main .page-header .contacts_maintenance{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
 
-  #layout-error #main .page-header .email {
+  #layout-error #main .page-header .contacts_maintenance a{
     color: #fff;
     font-weight: lighter;
     font-size: 1.25rem;
-    padding: 1rem;
+    padding: 0.5rem;
   }
-  #layout-error #main .page-header .email_mobile {
+
+  #layout-error #main .page-header .contacts_maintenance a.contact_whatsapp{
+    color: #282828;
+    font-weight: lighter;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: arial;
+    text-decoration: none;
+  }
+
+  #layout-error #main .page-header .contacts_maintenance a.contact_whatsapp:hover {
+    background: #e1e1e1;
+  }
+
+  #layout-error #main .page-header .contacts_maintenance a.contact_whatsapp img {
+    border-radius: 0.25rem;
+  }
+
+  .contact_whatsapp_container{
+    display: flex;
+    justify-content: end;
+    position: relative;
+  }
+  .button_whatsapp{
+    position: relative;
+    z-index: 2;
+  }
+  .button_whatsapp:hover .whatsapp_hidden{
+
+  }
+  .whatsapp_content{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    flex-direction: column;
+    background: #fff;
+    z-index: 1;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+  }
+  .whatsapp_hidden{
     display: none;
   }
-  #layout-error #main .page-header .email  i{
+  .contact_whatsapp{
+    
+  }
+
+  #layout-error #main .page-header .contacts_maintenance_mobile {
+    display: none;
+  }
+  #layout-error #main .page-header .contacts_maintenance  i{
     margin-right: 0.5rem;
   }
 
@@ -118,7 +176,7 @@ body{
     background: rgba(0, 0, 0, 0.6);
     padding: 1rem;
   }
-
+ 
   .footer_maintenance .brands-logo {
     width: 150px;
   }
@@ -154,17 +212,17 @@ body{
       margin: 0;
     }
 
-    #layout-error #main .page-header .email {
+    #layout-error #main .page-header .contacts_maintenance {
       display: none;
     }
-    #layout-error #main .page-header .email_mobile {
+    #layout-error #main .page-header .contacts_maintenance_mobile {
       color: #fff;
     font-weight: lighter;
     font-size: 1.25rem;
     display: block;
     }
 
-    #layout-error #main .page-header .email_mobile a {
+    #layout-error #main .page-header .contacts_maintenance_mobile a {
       display: flex;
       align-items: center;
       gap: .5rem;
