@@ -251,7 +251,6 @@
 }
 .container-catalogs .catalog-card {
   padding: 1rem;
-  width: 100vw;
 }
 
 .container-catalogs .catalog-card:hover img {
@@ -309,6 +308,11 @@
     scroll-snap-align: start;
     width: 100vw;
   }
+
+  .container-catalogs .catalog-card {
+  padding: 1rem;
+  width: 100vw;
+}
 
   .btn-close{
     display: none !important;
