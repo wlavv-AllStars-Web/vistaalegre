@@ -309,6 +309,11 @@
     width: 100vw;
   }
 
+  .container-catalogs h1{
+    width: 100vw;
+    text-align: center;
+  }
+
   .container-catalogs .catalog-card {
   padding: 1rem;
   width: 100vw;
